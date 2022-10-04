@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const SLink = styled(Link)`
+    text-decoration: none;
+`;
+
 export const Header = styled.header`
     width: 100%;
     display: flex;

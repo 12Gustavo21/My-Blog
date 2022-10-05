@@ -58,19 +58,16 @@ export const Li = styled.li`
     color: #75D5E6;
     position: relative;
 
-    &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 0;
-        height: 2px;
-        background-color: #75D5E6;
-        transition: width 0.25s ease-out;
+    &::after {
+        display: block;
+        content: '';
+        border-bottom: solid 1px #00FFFF;
+        transform: scaleX(0);
+        transition: transform 300ms ease-in-out;
     }
 
-    &:hover::before {
-        width: 100%;
+    &:hover::after {
+        transform: scaleX(1);
     }
 `;
 

@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-export const SLink = styled(Link)`
-    text-decoration: none;
-`;
-
 export const Header = styled.header`
     width: 100%;
     display: flex;
@@ -28,12 +24,12 @@ export const Figure = styled.figure`
 `;
 
 export const Logo = styled.img`
-    width: 20%;
+    width: 100%;
     height: 13vh;
 `;
 
 export const BoxList = styled.section`
-    width: 90%;
+    width: 100%;
     border-radius: 25px 0 0 25px;
     border: .1px solid #099FFF;
     background-color: #0D0F36;
@@ -48,10 +44,15 @@ export const List = styled.ul`
     min-height: 13vh;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    a {
+        text-decoration: none;
+    }
 `;
 
 export const Li = styled.li`
-    margin: auto;
     color: white;
     font-size: 20px;
     color: #75D5E6;

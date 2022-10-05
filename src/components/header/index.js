@@ -8,14 +8,14 @@ export default function index() {
     <S.Header>
       <S.Container>
         <S.Figure>
-          <S.SLink to='/' > <S.Logo src={Logo} alt='A big G' /> </S.SLink>
+          <Link to='/' > <S.Logo src={Logo} alt='A big G' /> </Link>
         </S.Figure>
         <S.BoxList>
           <S.List>
-            <S.SLink to='/' > <S.Li>HOME</S.Li> </S.SLink>
-            <S.Li>ABOUT ME</S.Li>
-            <S.Li>PROJECTS</S.Li>
-            <S.Li>SUSTAINABLE PROJECTS</S.Li>
+            <Link to='/' > <S.Li>HOME</S.Li> </Link>
+            <Link to='/About'> <S.Li>ABOUT ME</S.Li> </Link>
+            <Link to='/Projects'> <S.Li>PROJECTS</S.Li> </Link>
+            <Link to='/Sustainable'> <S.Li>SUSTAINABLE PROJECTS</S.Li> </Link>
           </S.List>
           <S.Menu>
             <S.Line></S.Line>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { GlobalStyle } from './global/style';
-import Cursor from './components/Cursor/index';
-import Routes from './services/Routess';
+import Cursor from './services/Cursor/index';
+import Routes from './services/Ways';
 
 export default function App() {
   return (

@@ -30,7 +30,7 @@ const Cursor = () => {
             document.removeEventListener('mousedown', mouseOverEvent);
             document.removeEventListener('mouseup', mouseOutEvent);
             document.removeEventListener('mousemove', mouseMoveEvent);
-            document.removeEventListener('mouseenter', mouseEnterEvent);
+            document.removeEventListener('moueseenter', mouseEnterEvent);
             document.removeEventListener('mouseleave', mouseLeaveEvent);
 
             cancelAnimationFrame(requestRef.current);
@@ -41,9 +41,13 @@ const Cursor = () => {
         if(CursorVisible.current) {
             dot.current.style.opacity = 1;
             dotOutline.current.style.opacity = .5;
+            dot.current.style.zIndex = 999999999;
+            dotOutline.current.style.zIndex = 999999999;
         } else {
             dot.current.style.opacity = 0;
             dotOutline.current.style.opacity = 0;
+            dot.current.style.zIndex = 0;
+            dotOutline.current.style.zIndex = 0;
         }
     }
 

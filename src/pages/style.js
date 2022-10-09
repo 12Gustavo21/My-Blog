@@ -36,6 +36,8 @@ export const Li = styled.li`
     font-size: 20px;
     color: #75D5E6;
     position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 500;
 
     &::after {
         display: block;

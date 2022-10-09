@@ -24,7 +24,7 @@ export const Figure = styled.figure`
 `;
 
 export const Logo = styled.img`
-    width: 25%;
+    width: 23%;
     height: 13vh;
 `;
 
@@ -56,6 +56,8 @@ export const Li = styled.li`
     color: white;
     font-size: 20px;
     color: #75D5E6;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 500;
     position: relative;
 
     &::after {

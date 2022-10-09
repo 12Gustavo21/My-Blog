@@ -11,4 +11,14 @@ export const GlobalStyle = createGlobalStyle`
         scroll-behavior: smooth;
         cursor: none;
     }
+
+    ::-webkit-scrollbar {
+        background: #29438050;
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #0D0F36;
+        border-radius: 10px;
+    }
 `;

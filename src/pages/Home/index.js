@@ -23,6 +23,9 @@ export default function index() {
                   <S.MyName>
                     I'm Gustavo
                   </S.MyName>
+                  <S.MyName>
+                    I'm Gustavo
+                  </S.MyName>
                   <S.HI src={Hi} alt='Hand saying goodbye' />
                 </S.BoxOne>
                 <S.BoxTwo>
@@ -34,9 +37,9 @@ export default function index() {
             </S.Greetings>
             <S.SocialMedias>
               <S.Icons>
-                <S.Icon src={GitHub} alt='' />
-                <S.Icon src={Linkendin} alt='' />
-                <S.Icon src={Intagram} alt='' />
+                <a href='https://github.com/12Gustavo21' target={'_blank'} rel="noreferrer"><S.Icon src={GitHub} alt='Github icon' /></a>
+                <a href='https://www.linkedin.com/in/gustavo-almeida-421044246/' target={'_blank'} rel="noreferrer"><S.Icon src={Linkendin} alt='Linkendin icon' /></a>
+                <a href='https://www.instagram.com/gustavo_almeida092/' target={'_blank'} rel="noreferrer"><S.Icon src={Intagram} alt='Instagram icon' /></a>
               </S.Icons>
             </S.SocialMedias>
           </S.Information>

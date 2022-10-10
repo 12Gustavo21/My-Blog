@@ -3,13 +3,17 @@ import styled from "styled-components";
 export const Footer = styled.footer`
     background-color: #294380;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    isolation: isolate;
 `;
 
 export const BoxList = styled.section`
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -12,9 +12,9 @@ export default function index() {
         </S.Figure>
         <S.BoxList>
           <S.List>
-            <Link to='/About'> <S.Li>ABOUT ME</S.Li> </Link>
-            <Link to='/Projects'> <S.Li>PROJECTS</S.Li> </Link>
-            <Link to='/Sustainable'> <S.Li>SUSTAINABLE PROJECTS</S.Li> </Link>
+            <Link to='/about'> <S.Li>ABOUT ME</S.Li> </Link>
+            <Link to='/projects'> <S.Li>PROJECTS</S.Li> </Link>
+            <Link to='/sustainable'> <S.Li>SUSTAINABLE PROJECTS</S.Li> </Link>
           </S.List>
           <S.Menu>
             <S.Line></S.Line>

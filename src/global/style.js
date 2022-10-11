@@ -9,7 +9,6 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         list-style: none;
         scroll-behavior: smooth;
-        cursor: none;
     }
 
     ::-webkit-scrollbar {

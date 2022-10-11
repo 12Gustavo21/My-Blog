@@ -1,27 +1,26 @@
 import styled from "styled-components";
 
 export const Cursors = styled.section`
-    .cursor-dot-outline,
-    .cursor-dot {
-        pointer-events: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .large_circle,
+    .small_circle {
         border-radius: 50%;
-        opacity: 1;
-        transition: opacity .3 ease-in-out, transform .3s ease-in-out;
+        position: fixed;
+        pointer-events: none;
+        transition: transform 0.1s;
+        z-index: 999999;
     }
 
-    .cursor-dot {
-        width: 8px;
-        height: 8px;
-        background-color: #333;
-    }
-
-    .cursor-dot-outline {
-        width: 40px;
-        height: 40px;
+    .large_circle {
         background-color: #00FFFF;
+        opacity: .5;
+        width: 64px;
+        height: 64px;
+    }
+
+    .small_circle {
+        width: 20px;
+        height: 20px;
+        background-color: #333;
+        opacity: .8;
     }
 `;

@@ -8,6 +8,10 @@ export const Cursors = styled.section`
         pointer-events: none;
         transition: transform 0.1s;
         z-index: 999999;
+
+        @media only screen and (min-width: 320px) and (max-width: 1023px) {
+            display: none;
+        }
     }
 
     .large_circle {

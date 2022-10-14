@@ -8,7 +8,7 @@ export default function index() {
     <S.Header>
       <S.Container>
         <S.Figure>
-          <S.Logo src={Logo} alt='A big G' />
+          <S.Logo src={Logo} alt='A big G' data-aos="zoom-out" data-aos-duration="3000" />
         </S.Figure>
         <S.BoxList>
           <S.List>

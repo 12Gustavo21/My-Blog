@@ -1,17 +1,21 @@
 import React from 'react'
-import * as S from '../style';
+import * as Geral from '../style';
+import * as S from './style';
 import { Link } from 'react-router-dom';
 
 export default function index() {
   return (
-    <S.Header>
-        <S.BoxList>
-          <S.List>
-            <Link to='/'> <S.Li>HOME</S.Li> </Link>
-            <Link to='/About'> <S.Li>ABOUT ME</S.Li> </Link>
-            <Link to='/Projects'> <S.Li>PROJECTS</S.Li> </Link>
-          </S.List>
-        </S.BoxList>
-    </S.Header>
+    <>
+      <Geral.Header>
+        <Geral.BoxList>
+          <Geral.List>
+            <Link to='/'> <Geral.Li>HOME</Geral.Li> </Link>
+            <Link to='/About'> <Geral.Li>ABOUT ME</Geral.Li> </Link>
+            <Link to='/Projects'> <Geral.Li>PROJECTS</Geral.Li> </Link>
+          </Geral.List>
+        </Geral.BoxList>
+      </Geral.Header>
+      <S.Main></S.Main>
+    </>
   )
 }

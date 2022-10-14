@@ -27,9 +27,8 @@ export const Photo = styled.img`
     transition: 1s all;
 
     &:hover {
-        border-radius: 50px;
-        transform: scale(.95);
-        box-shadow: 10px 10px 30px 10px;
+        box-shadow: 1px 1px 30px 1px;
+        transform: scale(.9);
     }
 `;
 
@@ -97,11 +96,11 @@ export const MyName = styled.section`
 `;
 
 export const HI = styled.img`
-    width: 10%;
+    width: 13%;
     height: 8vh;
     filter: drop-shadow(1px 1px 2px #000);
     position: relative;
-    left: 48%;
+    left: 50%;
 `;
 
 export const BoxTwo = styled.section`

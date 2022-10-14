@@ -4,6 +4,7 @@ export const Header = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #294380;
 `;
 
 export const BoxList = styled.section`

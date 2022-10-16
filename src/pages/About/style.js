@@ -60,6 +60,7 @@ export const MyText = styled.p`
     word-break: break-all;
     text-align: center;
     padding: 30px;
+    font-family: 'Raleway', sans-serif;
 `
 
 export const MyPhoto = styled.img`

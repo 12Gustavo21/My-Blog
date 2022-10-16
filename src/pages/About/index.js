@@ -37,7 +37,7 @@ export default function index() {
       <S.Main>
         <S.Container>
           <S.ContentBox>
-            <S.CarouselBox>
+            <S.CarouselBox data-aos="zoom-in-up" data-aos-duration="1500">
               <S.CarouselTitle>MY FAVORITE PHOTOS</S.CarouselTitle>
               <Carousel
                 autoplay={true}
@@ -85,8 +85,8 @@ export default function index() {
               </Carousel>
             </S.CarouselBox>
             <S.AboutMe>
-              <S.Description>
-                <S.MyText>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </S.MyText>
+              <S.Description data-aos-duration="2000" data-aos="fade-right">
+                <S.MyText>Hi, I'm Gustavo. I don't know how you got here, but welcome. Well, the things I like are quite varied, I love kittens, appreciate the beauties of nature, and study technology. I'm currently studying A LOT to become a good front-end developer. I'm constantly trying to weigh personal studies against academics, seriously it's quite challenging. But I move on and never give up.</S.MyText>
                 <S.MyPhoto src={Photo1} alt='My photo' />
               </S.Description>
             </S.AboutMe>

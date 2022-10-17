@@ -24,7 +24,7 @@ export const Photo = styled.img`
     border-radius: 20px;
     box-shadow: 0 25px 25px -10px;
     object-fit: cover;
-    transition: 1s all;
+    transition: 1s all linear;
 
     &:hover {
         box-shadow: 1px 1px 30px 1px;
@@ -137,7 +137,7 @@ export const Icons = styled.section`
 export const Icon = styled.img`
     width: 100%;
     height: 15vh;
-    transition: 1s all;
+    transition: 1s all linear;
 
     &:hover {
         transform: scale(.9);

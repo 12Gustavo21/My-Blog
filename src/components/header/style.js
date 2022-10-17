@@ -72,25 +72,3 @@ export const Li = styled.li`
         transform: scaleX(1);
     }
 `;
-
-export const Menu = styled.section`
-    margin-right: 40px;
-    width: 5%;
-    height: 3vh;
-    display: none;
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column; */
-`;
-
-export const Line = styled.section`
-    width: 100%;
-    height: 1vh;
-    background: #75D5E6;
-    display: none;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px; */
-`;

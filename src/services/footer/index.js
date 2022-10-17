@@ -24,7 +24,7 @@ export default function index() {
             <Link to='/'> <HeaderStyle.Li>HOME</HeaderStyle.Li> </Link>
             <Link to='/about'> <HeaderStyle.Li>ABOUT ME</HeaderStyle.Li> </Link>
             <Link to='/projects'> <HeaderStyle.Li>PROJECTS</HeaderStyle.Li> </Link>
-            <Link to='/sustainable'> <HeaderStyle.Li>SUSTAINABLE PROJECTS</HeaderStyle.Li> </Link>
+            <Link to='/sdgs'> <HeaderStyle.Li>SDGS</HeaderStyle.Li> </Link>
           </S.List>
         </S.BoxList>
       </S.Footer>

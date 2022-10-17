@@ -30,14 +30,14 @@ export default function index() {
           <Geral.List>
             <Link to='/'> <Geral.Li>HOME</Geral.Li> </Link>
             <Link to='/Projects'> <Geral.Li>PROJECTS</Geral.Li> </Link>
-            <Link to='/Sustainable'> <Geral.Li>SUSTAINABLE PROJECTS</Geral.Li> </Link>
+            <Link to='/sdgs'> <Geral.Li>SDGS</Geral.Li> </Link>
           </Geral.List>
         </Geral.BoxList>
       </Geral.Header>
       <S.Main>
         <S.Container>
           <S.ContentBox>
-            <S.CarouselBox data-aos="zoom-in-up" data-aos-duration="1500">
+            <S.CarouselBox>
               <S.CarouselTitle>MY FAVORITE PHOTOS</S.CarouselTitle>
               <Carousel
                 autoplay={true}
@@ -85,9 +85,13 @@ export default function index() {
               </Carousel>
             </S.CarouselBox>
             <S.AboutMe>
-              <S.Description data-aos-duration="2000" data-aos="fade-right">
-                <S.MyText>Hi, I'm Gustavo. I don't know how you got here, but welcome. Well, the things I like are quite varied, I love kittens, appreciate the beauties of nature, and study technology. I'm currently studying A LOT to become a good front-end developer. I'm constantly trying to weigh personal studies against academics, seriously it's quite challenging. But I move on and never give up.</S.MyText>
-                <S.MyPhoto src={Photo1} alt='My photo' />
+              <S.Description>
+                <S.TextBox>
+                  <S.MyText>Hi, I'm Gustavo. I don't know how you got here, but welcome. Well, the things I like are quite varied, I love kittens, appreciate the beauties of nature, and study technology. I'm currently studying A LOT to become a good front-end developer. I'm constantly trying to weigh personal studies against academics, seriously it's quite challenging. But I move on and never give up.</S.MyText>
+                </S.TextBox>
+                <S.PhotoBox>
+                  <S.MyPhoto src={Photo1} alt='My photo' />
+                </S.PhotoBox>
               </S.Description>
             </S.AboutMe>
           </S.ContentBox>

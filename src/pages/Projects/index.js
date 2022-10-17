@@ -18,7 +18,7 @@ export default function index() {
           <Geral.List>
             <Link to='/'> <Geral.Li>HOME</Geral.Li> </Link>
             <Link to='/About'> <Geral.Li>ABOUT ME</Geral.Li> </Link>
-            <Link to='/Sustainable'> <Geral.Li>SUSTAINABLE PROJECTS</Geral.Li> </Link>
+            <Link to='/sdgs'> <Geral.Li>SDGS</Geral.Li> </Link>
           </Geral.List>
         </Geral.BoxList>
       </Geral.Header>
@@ -27,7 +27,7 @@ export default function index() {
           <S.Title>MY PROJECTS</S.Title>
           <S.Projects>
             <S.ProjectBox>
-              <S.Acess data-aos-duration="2500" data-aos="zoom-out">
+              <S.Acess>
                 <S.AcessBox>
                   <a href='https://github.com/12Gustavo21/Movie-API.git' target={'_blank'} rel="noreferrer"> <S.Icon src={GithubIcon} alt='Github Icon' /> </a>
                   <a href='https://github.com/12Gustavo21/Movie-API.git' target={'_blank'} rel="noreferrer"><S.Link>Repository</S.Link></a>
@@ -38,14 +38,14 @@ export default function index() {
                 </S.AcessBox>
               </S.Acess>
               <S.ProjectImageBox>
-                <S.ProjectPhoto src={EagleFlix} alt='EagleFlix project image' data-aos-duration="2000" data-aos="flip-left" />
+                <S.ProjectPhoto src={EagleFlix} alt='EagleFlix project image' />
               </S.ProjectImageBox>
             </S.ProjectBox>
             <S.ProjectBox>
               <S.ProjectImageBox>
-                <S.ProjectPhoto src={HarryPotter} alt='Harry Potter project image' data-aos-duration="2000" data-aos="flip-right" />
+                <S.ProjectPhoto src={HarryPotter} alt='Harry Potter project image' />
               </S.ProjectImageBox>
-              <S.Acess data-aos-duration="2500" data-aos="zoom-out">
+              <S.Acess>
                 <S.AcessBox>
                   <a href='https://github.com/12Gustavo21/Harry-Potter_API.git' target={'_blank'} rel="noreferrer"> <S.Icon src={GithubIcon} alt='Github Icon' /> </a>
                   <a href='https://github.com/12Gustavo21/Harry-Potter_API.git' target={'_blank'} rel="noreferrer"><S.Link>Repository</S.Link></a>
@@ -57,7 +57,7 @@ export default function index() {
               </S.Acess>
             </S.ProjectBox>
             <S.ProjectBox>
-              <S.Acess data-aos-duration="2500" data-aos="zoom-out">
+              <S.Acess>
                 <S.AcessBox>
                   <a href='https://github.com/12Gustavo21/Dog-API.git' target={'_blank'} rel="noreferrer"> <S.Icon src={GithubIcon} alt='Github Icon' /> </a>
                   <a href='https://github.com/12Gustavo21/Dog-API.git' target={'_blank'} rel="noreferrer"><S.Link>Repository</S.Link></a>
@@ -68,14 +68,14 @@ export default function index() {
                 </S.AcessBox>
               </S.Acess>
               <S.ProjectImageBox>
-                <S.ProjectPhoto src={Puppies} alt='Puppies project image' data-aos-duration="2000" data-aos="flip-left" />
+                <S.ProjectPhoto src={Puppies} alt='Puppies project image' />
               </S.ProjectImageBox>
             </S.ProjectBox>
             <S.ProjectBox>
               <S.ProjectImageBox>
-                <S.ProjectPhoto src={ToDo} alt='To do project image' data-aos-duration="2000" data-aos="flip-right" />
+                <S.ProjectPhoto src={ToDo} alt='To do project image' />
               </S.ProjectImageBox>
-              <S.Acess data-aos-duration="2500" data-aos="zoom-out">
+              <S.Acess>
                 <S.AcessBox>
                   <a href='https://github.com/12Gustavo21/To-do-2.0.git' target={'_blank'} rel="noreferrer"> <S.Icon src={GithubIcon} alt='Github Icon' /> </a>
                   <a href='https://github.com/12Gustavo21/To-do-2.0.git' target={'_blank'} rel="noreferrer"><S.Link>Repository</S.Link></a>
@@ -87,7 +87,7 @@ export default function index() {
               </S.Acess>
             </S.ProjectBox>
             <S.ProjectBox>
-              <S.Acess data-aos-duration="2500" data-aos="zoom-out">
+              <S.Acess>
                 <S.AcessBox>
                   <a href='https://github.com/12Gustavo21/Recipes.git' target={'_blank'} rel="noreferrer"> <S.Icon src={GithubIcon} alt='Github Icon' /> </a>
                   <a href='https://github.com/12Gustavo21/Recipes.git' target={'_blank'} rel="noreferrer"><S.Link>Repository</S.Link></a>
@@ -98,7 +98,7 @@ export default function index() {
                 </S.AcessBox>
               </S.Acess>
               <S.ProjectImageBox>
-                <S.ProjectPhoto src={Recipes} alt='Recipes project image' data-aos-duration="2000" data-aos="flip-left" />
+                <S.ProjectPhoto src={Recipes} alt='Recipes project image' />
               </S.ProjectImageBox>
             </S.ProjectBox>
           </S.Projects>

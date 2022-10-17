@@ -14,12 +14,12 @@ export default function index() {
       <S.Main>
         <S.Container>
           <S.Figure>
-            <S.Photo src={MyPhoto} alt='my photo' data-aos="flip-left" data-aos-duration="2500"/>
+            <S.Photo src={MyPhoto} alt='my photo' />
           </S.Figure>
           <S.Information>
             <S.Greetings>
               <S.GreetingsBox>
-                <S.BoxOne data-aos="fade-right" data-aos-duration="2500">
+                <S.BoxOne>
                   <S.MyName>
                     I'm Gustavo
                   </S.MyName>
@@ -28,7 +28,7 @@ export default function index() {
                   </S.MyName>
                   <S.HI src={Hi} alt='Hand saying goodbye' />
                 </S.BoxOne>
-                <S.BoxTwo data-aos="fade-left" data-aos-duration="3000">
+                <S.BoxTwo>
                   <S.Salutation>
                     WELCOME
                   </S.Salutation>
@@ -37,9 +37,9 @@ export default function index() {
             </S.Greetings>
             <S.SocialMedias>
               <S.Icons>
-                <a href='https://github.com/12Gustavo21' target={'_blank'} rel="noreferrer"><S.Icon src={GitHub} alt='Github icon' data-aos="zoom-out" data-aos-duration="2000" /></a>
-                <a href='https://www.linkedin.com/in/gustavo-almeida-421044246/' target={'_blank'} rel="noreferrer"><S.Icon src={Linkendin} alt='Linkendin icon' data-aos="zoom-out" data-aos-duration="2500" /></a>
-                <a href='https://www.instagram.com/gustavo_almeida092/' target={'_blank'} rel="noreferrer"><S.Icon src={Intagram} alt='Instagram icon' data-aos="zoom-out" data-aos-duration="3000" /></a>
+                <a href='https://github.com/12Gustavo21' target={'_blank'} rel="noreferrer"><S.Icon src={GitHub} alt='Github icon' /></a>
+                <a href='https://www.linkedin.com/in/gustavo-almeida-421044246/' target={'_blank'} rel="noreferrer"><S.Icon src={Linkendin} alt='Linkendin icon' /></a>
+                <a href='https://www.instagram.com/gustavo_almeida092/' target={'_blank'} rel="noreferrer"><S.Icon src={Intagram} alt='Instagram icon' /></a>
               </S.Icons>
             </S.SocialMedias>
           </S.Information>

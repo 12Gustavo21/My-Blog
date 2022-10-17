@@ -4,7 +4,6 @@ export const Main = styled.main`
     width: 100%;
     min-height: 100vh;
     background: #294380;
-    overflow: hidden;
 `;
 
 export const Container = styled.section`
@@ -19,11 +18,17 @@ export const Title = styled.h1`
     font-family: 'Open Sans', sans-serif;
     font-weight: 900;
     padding: 30px;
+    word-break: break-all;
 `;
 
 export const Projects = styled.section`
     width: 100%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 `;
 
 export const ProjectBox = styled.section`
@@ -32,6 +37,7 @@ export const ProjectBox = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 `;
 
 export const Acess = styled.section`
@@ -57,6 +63,11 @@ export const AcessBox = styled.section`
 export const Icon = styled.img`
     width: 100%;
     height: 10vh;
+    transition: 1s all linear;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 `;
 
 export const Link = styled.h1`
@@ -64,6 +75,11 @@ export const Link = styled.h1`
     font-size: 2em;
     font-family: 'Raleway', sans-serif;
     filter: drop-shadow(0 3px 6px #000);
+    transition: 1s all linear;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 `;
 
 export const ProjectImageBox = styled.section`
@@ -74,4 +90,10 @@ export const ProjectImageBox = styled.section`
 export const ProjectPhoto = styled.img`
     width: 100%;
     height: 60vh;
+    transition: 1s all linear;
+
+    &:hover {
+        transform: scale(.9);
+        border-radius: 20px;
+    }
 `;

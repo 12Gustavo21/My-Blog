@@ -8,18 +8,14 @@ export default function index() {
     <S.Header>
       <S.Container>
         <S.Figure>
-          <S.Logo src={Logo} alt='A big G' data-aos="zoom-out" data-aos-duration="3000" />
+          <S.Logo src={Logo} alt='A big G' />
         </S.Figure>
         <S.BoxList>
           <S.List>
             <Link to='/about'> <S.Li>ABOUT ME</S.Li> </Link>
             <Link to='/projects'> <S.Li>PROJECTS</S.Li> </Link>
-            <Link to='/sustainable'> <S.Li>SUSTAINABLE PROJECTS</S.Li> </Link>
+            <Link to='/sdgs'> <S.Li>SDGS</S.Li> </Link>
           </S.List>
-          <S.Menu>
-            <S.Line></S.Line>
-            <S.Line></S.Line>
-          </S.Menu>
         </S.BoxList>
       </S.Container>
     </S.Header>

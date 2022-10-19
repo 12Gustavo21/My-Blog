@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Main = styled.main`
     width: 100%;
@@ -88,6 +88,17 @@ export const GreetingsBox = styled.section`
     }
 `;
 
+const Wave = keyframes`
+    0%,
+    100% {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+`;
+
 export const BoxOne = styled.section`
     width: 100%;
     display: flex;
@@ -106,19 +117,8 @@ export const BoxOne = styled.section`
 
     section:nth-child(2) {
         -webkit-text-stroke: 1px #75D5E6;
-        animation: wave 3s ease-in-out infinite;
+        animation: ${Wave} 3s ease-in-out infinite;
         filter: drop-shadow(1px 1px 1px #000);
-    }
-
-    @keyframes wave {
-        0%,
-        100% {
-            clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
-        }
-
-        50% {
-            clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
-        }
     }
 `;
 
@@ -146,7 +146,7 @@ export const HI = styled.img`
         width: 20%;
         height: 10vh;
         position: relative;
-        top: 55px;
+        top: 70px;
         left: 0;
     }
 `;

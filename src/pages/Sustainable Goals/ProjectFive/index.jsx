@@ -1,8 +1,12 @@
 import React from 'react';
 import ProjectPage from '../Project-Page';
-import ObjectiveFive from '../../../img/ObjectiveFive.png';
 import { Link } from 'react-router-dom';
+
+//Styles
 import * as S from '../style';
+
+//Images
+import ObjectiveFive from '../../../img/ObjectiveFive.png';
 
 export default function index() {
   return (

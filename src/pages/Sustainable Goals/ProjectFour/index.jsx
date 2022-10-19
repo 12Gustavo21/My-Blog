@@ -1,8 +1,12 @@
 import React from 'react';
 import ProjectPage from '../Project-Page';
-import ObjectiveFour from '../../../img/ObjectiveFour.png';
 import { Link } from 'react-router-dom';
+
+//Styles
 import * as S from '../style';
+
+//Images
+import ObjectiveFour from '../../../img/ObjectiveFour.png';
 
 export default function index() {
   return (

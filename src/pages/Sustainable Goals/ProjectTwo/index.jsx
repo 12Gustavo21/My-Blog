@@ -1,8 +1,12 @@
 import React from 'react';
-import ProjectPage from '../Project-Page';
-import ObjectiveTwo from '../../../img/ObjectiveTwo.png';
 import { Link } from 'react-router-dom';
+import ProjectPage from '../Project-Page';
+
+//Styles
 import * as S from '../style';
+
+//Images
+import ObjectiveTwo from '../../../img/ObjectiveTwo.png';
 
 export default function index() {
   return (

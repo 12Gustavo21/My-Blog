@@ -29,6 +29,10 @@ export const ContentBox = styled.section`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        flex-direction: column;
+    }
 `;
 
 export const ImageBox = styled.figure`
@@ -37,12 +41,24 @@ export const ImageBox = styled.figure`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        width: 100%;
+        min-height: 50vh;
+    }
 `;
 
 export const ProjectImage = styled.img`
     width: 70%;
     height: 75vh;
-    object-fit: cover;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        width: 20rem;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        height: 60vh;
+    }
 `;
 
 export const TextBox = styled.section`
@@ -51,6 +67,11 @@ export const TextBox = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        width: 100%;
+        min-height: 50vh;
+    }
 `;
 
 export const Description = styled.p`

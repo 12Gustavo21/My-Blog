@@ -5,10 +5,12 @@ export const Header = styled.section`
     justify-content: center;
     align-items: center;
     background: #294380;
+    width: 100%;
+    min-height: 20vh;
 `;
 
 export const BoxList = styled.section`
-    width: 80%;
+    width: 90%;
     border-radius: 25px;
     border: .1px solid #099FFF;
     background-color: #0D0F36;
@@ -16,7 +18,6 @@ export const BoxList = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1%;
 `;
 
 export const List = styled.ul`

@@ -1,7 +1,11 @@
 import React from 'react';
-import * as Geral from '../style';
-import * as S from './style'
 import { Link } from 'react-router-dom';
+
+//Styles
+import * as Geral from '../style';
+import * as S from './style';
+
+//Images
 import ToDo from '../../img/Cat-to-do.png';
 import EagleFlix from '../../img/EagleFlix.png';
 import HarryPotter from '../../img/Harry-Potter-API.png';
@@ -42,9 +46,6 @@ export default function index() {
               </S.ProjectImageBox>
             </S.ProjectBox>
             <S.ProjectBox>
-              <S.ProjectImageBox>
-                <S.ProjectPhoto src={HarryPotter} alt='Harry Potter project image' />
-              </S.ProjectImageBox>
               <S.Acess>
                 <S.AcessBox>
                   <a href='https://github.com/12Gustavo21/Harry-Potter_API.git' target={'_blank'} rel="noreferrer"> <S.Icon src={GithubIcon} alt='Github Icon' /> </a>
@@ -55,6 +56,9 @@ export default function index() {
                   <a href='https://harry-potterapi.netlify.app' target={'_blank'} rel="noreferrer"><S.Link>Deploy</S.Link></a>
                 </S.AcessBox>
               </S.Acess>
+              <S.ProjectImageBox>
+                <S.ProjectPhoto src={HarryPotter} alt='Harry Potter project image' />
+              </S.ProjectImageBox>
             </S.ProjectBox>
             <S.ProjectBox>
               <S.Acess>
@@ -72,9 +76,6 @@ export default function index() {
               </S.ProjectImageBox>
             </S.ProjectBox>
             <S.ProjectBox>
-              <S.ProjectImageBox>
-                <S.ProjectPhoto src={ToDo} alt='To do project image' />
-              </S.ProjectImageBox>
               <S.Acess>
                 <S.AcessBox>
                   <a href='https://github.com/12Gustavo21/To-do-2.0.git' target={'_blank'} rel="noreferrer"> <S.Icon src={GithubIcon} alt='Github Icon' /> </a>
@@ -85,6 +86,9 @@ export default function index() {
                   <a href='https://cat-to-do.netlify.app' target={'_blank'} rel="noreferrer"><S.Link>Deploy</S.Link></a>
                 </S.AcessBox>
               </S.Acess>
+              <S.ProjectImageBox>
+                <S.ProjectPhoto src={ToDo} alt='To do project image' />
+              </S.ProjectImageBox>
             </S.ProjectBox>
             <S.ProjectBox>
               <S.Acess>

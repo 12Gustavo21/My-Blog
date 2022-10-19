@@ -1,8 +1,10 @@
 import React from 'react';
-import * as S from './style';
-import * as HeaderStyle from '../../components/header/style'
-import Wave from 'react-wavify';
 import { Link } from 'react-router-dom';
+import Wave from 'react-wavify';
+
+//Styles
+import * as S from './style';
+import * as HeaderStyle from '../../components/header/style';
 
 export default function index() {
   return (

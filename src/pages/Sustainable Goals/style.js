@@ -21,7 +21,7 @@ export const Title = styled.h1`
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 900;
-    padding: 30px;
+    padding: 30px 0;
 `;
 
 export const Text = styled.p`

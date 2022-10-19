@@ -1,8 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Slider from 'react-slick';
+
+// Styles
 import * as Geral from '../style';
 import * as S from './style';
-import { Link } from 'react-router-dom';
-import Carousel from 'nuka-carousel';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+// Images
 import Photo1 from '../../img/Photo1.jpg';
 import Photo2 from '../../img/Photo2.webp';
 import Photo3 from '../../img/Photo3.webp';
@@ -23,6 +29,111 @@ import Photo17 from '../../img/Photo17.jpg';
 import Photo18 from '../../img/Photo18.webp';
 
 export default function index() {
+  const gallery = [
+    {
+      img: Photo2,
+      alt: 'Landscape at night'
+    },
+    {
+      img: Photo3,
+      alt: 'Sunset landscape' 
+    },
+    {
+      img: Photo4,
+      alt: 'Flowers'
+    },
+    {
+      img: Photo5,
+      alt: 'Clouds landscape'
+    },
+    {
+      img: Photo6,
+      alt: 'Sleeping puppy'
+    },
+    {
+      img: Photo7,
+      alt: "St. John's bonfire"
+    },
+    {
+      img: Photo8,
+      alt: 'Sunset landscape'
+    },
+    {
+      img: Photo9,
+      alt: 'Glass corridor'
+    },
+    {
+      img: Photo10,
+      alt: 'Sunset landscape'
+    },
+    {
+      img: Photo11,
+      alt: 'My necklaces'
+    },
+    {
+      img: Photo12,
+      alt: 'Chandelier'
+    },
+    {
+      img: Photo13,
+      alt: 'Sunset landscape'
+    },
+    {
+      img: Photo14,
+      alt: 'Sunset landscape in the cactus'
+    },
+    {
+      img: Photo15,
+      alt: 'Sunset landscape'
+    },
+    {
+      img: Photo16,
+      alt: 'Sunshine on the rocks'
+    },
+    {
+      img: Photo17,
+      alt: 'Tree branches with a bird'
+    },
+    {
+      img: Photo18,
+      alt: 'Sunset landscape'
+    },
+  ];
+
+  const settings = {
+    dots: false,
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    FocusOnSelect: true,
+    speed: 3000,
+    autoplaySpeed: 3000,
+    adaptativeHeight: true,
+    prevArrow: <S.PrevArrow />,
+    nextArrow: <S.NextArrow />,
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          fade: true,
+          autoplay: false
+        }
+      }
+    ]
+  };
+
   return (
     <>
       <Geral.Header>
@@ -37,53 +148,18 @@ export default function index() {
       <S.Main>
         <S.Container>
           <S.ContentBox>
-            <S.CarouselBox>
-              <S.CarouselTitle>MY FAVORITE PHOTOS</S.CarouselTitle>
-              <Carousel
-                autoplay={true}
-                autoplayInterval={2000}
-                slidesToShow={2.5}
-                wrapAround={true}
-                enableKeyboardControls={true}
-                cellAlign='center'
-                cellSpacing={10}
-                renderBottomCenterControls={false}
-                defaultControlsConfig={{
-                  nextButtonText: '>',
-                  prevButtonText: '<',
-                  prevButtonStyle: {
-                    background: '#75D5E6',
-                    color: '#000',
-                    opacity: '0.6'
-                  },
-                  nextButtonStyle: {
-                    background: '#75D5E6',
-                    color: '#000',
-                    opacity: '0.6'
-                  }
-                }}
-                animation='zoom'
-                zoomScale={.95}
-              >
-                <S.Photo src={Photo2} alt='Favorite photo' />
-                <S.Photo src={Photo3} alt='Favorite photo' />
-                <S.Photo src={Photo4} alt='Favorite photo' />
-                <S.Photo src={Photo5} alt='Favorite photo' />
-                <S.Photo src={Photo6} alt='Favorite photo' />
-                <S.Photo src={Photo7} alt='Favorite photo' />
-                <S.Photo src={Photo8} alt='Favorite photo' />
-                <S.Photo src={Photo9} alt='Favorite photo' />
-                <S.Photo src={Photo10} alt='Favorite photo' />
-                <S.Photo src={Photo11} alt='Favorite photo' />
-                <S.Photo src={Photo12} alt='Favorite photo' />
-                <S.Photo src={Photo13} alt='Favorite photo' />
-                <S.Photo src={Photo14} alt='Favorite photo' />
-                <S.Photo src={Photo15} alt='Favorite photo' />
-                <S.Photo src={Photo16} alt='Favorite photo' />
-                <S.Photo src={Photo17} alt='Favorite photo' />
-                <S.Photo src={Photo18} alt='Favorite photo' />
-              </Carousel>
-            </S.CarouselBox>
+            <S.CarouselTitle>MY FAVORITE PHOTOS</S.CarouselTitle>
+            <Slider {...settings}>
+              {gallery.map((photo, i) => (
+                <div>
+                  <S.Photo
+                    key={i}
+                    src={photo.img}
+                    alt={photo.alt}
+                  />
+                </div>
+              ))}
+            </Slider>
             <S.AboutMe>
               <S.Description>
                 <S.TextBox>

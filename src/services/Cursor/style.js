@@ -6,7 +6,7 @@ export const Cursors = styled.section`
         border-radius: 50%;
         position: fixed;
         pointer-events: none;
-        transition: transform 0.1s;
+        transition: transform .1s linear;
         z-index: 999999;
 
         @media only screen and (min-width: 320px) and (max-width: 1023px) {
@@ -15,7 +15,8 @@ export const Cursors = styled.section`
     }
 
     .large_circle {
-        background-color: #00FFFF;
+        background: none;
+        border: 2px solid #00FFFF;
         opacity: .5;
         width: 64px;
         height: 64px;

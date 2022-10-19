@@ -2,29 +2,50 @@ import styled from "styled-components";
 
 export const Main = styled.main`
     width: 100%;
-    height: 85vh;
+    min-height: 85vh;
     background: #294380;
 `;
 
 export const Container = styled.section`
     width: 100%;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        flex-direction: column;
+    }
 `;
 
 export const Figure = styled.figure`
     width: 40%;
     height: 80vh;
     padding: 20px 0 0 40px;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: 0;
+    }
 `;
 
 export const Photo = styled.img`
-    width: 60%;
+    width: 19rem;
     height: 75vh;
     border-radius: 20px;
     box-shadow: 0 25px 25px -10px;
     object-fit: cover;
+    object-position: center;
     transition: 1s all linear;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        width: 17rem;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        width: 15rem;
+    }
 
     &:hover {
         box-shadow: 1px 1px 30px 1px;
@@ -39,18 +60,32 @@ export const Information = styled.section`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        width: 100%;
+    }
 `;
 
 export const Greetings = styled.section`
     display: flex;
+
+    @media only screen and (min-width: 320px) and (max-width: 1023px) {
+        align-items: center;
+        justify-content: center;
+    }
 `;
 
 export const GreetingsBox = styled.section`
     width: 100%;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @media only screen and (min-width: 320px) and (max-width: 1023px) {
+        justify-content: space-evenly;
+    }
 `;
 
 export const BoxOne = styled.section`
@@ -93,6 +128,11 @@ export const MyName = styled.section`
     font-size: 4em;
     color: #75D5E6;
     padding-right: 20px;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: 3em;
+        padding: 0;
+    };
 `;
 
 export const HI = styled.img`
@@ -101,6 +141,14 @@ export const HI = styled.img`
     filter: drop-shadow(1px 1px 2px #000);
     position: relative;
     left: 50%;
+
+    @media only screen and (min-width: 320px) and (max-width: 1023px) {
+        width: 20%;
+        height: 10vh;
+        position: relative;
+        top: 55px;
+        left: 0;
+    }
 `;
 
 export const BoxTwo = styled.section`
@@ -109,6 +157,10 @@ export const BoxTwo = styled.section`
     justify-content: center;
     align-items: center;
     padding-left: 220px;
+
+    @media only screen and (min-width: 320px) and (max-width: 1023px) {
+        padding: 0;
+    }
 `;
 
 export const Salutation = styled.h1`
@@ -123,7 +175,7 @@ export const SocialMedias = styled.section`
     height: 30vh;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 `;
 
 export const Icons = styled.section`
@@ -131,7 +183,7 @@ export const Icons = styled.section`
     height: 30vh;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-end;
+    align-items: center;
 `;
 
 export const Icon = styled.img`

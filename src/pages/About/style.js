@@ -14,15 +14,19 @@ export const Container = styled.section`
 export const ContentBox = styled.section`
     width: 100%;
     min-height: 100vh;
-`;
 
-export const CarouselBox = styled.section`
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
+    .slick-next {
+        right: 15px;
+    }
+
+    .slick-prev {
+        left: 15px;
+    }
+
+    .slick-prev:before, 
+    .slick-next:before {
+        color: #75D5E6;
+    }
 `;
 
 export const CarouselTitle = styled.h1`
@@ -31,13 +35,23 @@ export const CarouselTitle = styled.h1`
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 900;
+    padding: 20px 0;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        padding: 20px;
+    }
 `;
 
 export const Photo = styled.img`
     width: 90%;
     height: 70vh;
     object-fit: cover;
-    border-radius: 5px;
+    object-position: center;
+    border-radius: 10px;
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+        width: 100%;
+    }
 `;
 
 export const AboutMe = styled.section`
@@ -52,6 +66,10 @@ export const Description = styled.section`
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        flex-direction: column;
+    }
 `;
 
 export const TextBox = styled.section`
@@ -69,6 +87,10 @@ export const MyText = styled.p`
     text-align: center;
     padding: 0 20px;
     font-family: 'Raleway', sans-serif;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        padding: 20px 0 0 0;
+    }
 `;
 
 export const PhotoBox = styled.figure`
@@ -77,6 +99,10 @@ export const PhotoBox = styled.figure`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        width: 100%;
+    }
 `;
 
 export const MyPhoto = styled.img`
@@ -85,10 +111,24 @@ export const MyPhoto = styled.img`
     border-radius: 20px;
     box-shadow: 0 20px 25px -10px;
     object-fit: cover;
+    object-position: right;
     transition: 1s all;
 
     &:hover {
         box-shadow: 1px 1px 30px 1px;
         transform: scale(.9);
     }
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        width: 19rem;
+    }
+`;
+
+export const NextArrow = styled.button`
+    background: #294380;
+    border-radius: 50%;
+    z-index: 999999999999999999;
+`;
+
+export const PrevArrow = styled(NextArrow)`
 `;

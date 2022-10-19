@@ -1,6 +1,10 @@
 import React from 'react';
 import Header from '../../components/header/index';
+
+//Styles
 import * as S from './style';
+
+//Images
 import MyPhoto from '../../img/me.jpg';
 import Hi from '../../img/hi.gif';
 import GitHub from '../../img/Github-icon.png';

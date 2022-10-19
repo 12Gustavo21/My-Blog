@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Footer = styled.footer`
     background-color: #294380;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@ export const Footer = styled.footer`
 export const BoxList = styled.section`
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,13 +21,22 @@ export const BoxList = styled.section`
     a {
         text-decoration: none;
     }
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        flex-direction: column;
+    }
 `;
 
 export const List = styled.ul`
     width: 85%;
+    min-height: 40vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        flex-direction: column;
+    }
 
     li {
         font-size: 1.7em;

@@ -15,17 +15,32 @@ export const Container = styled.section`
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        flex-direction: column;
+    }
 `;
 
 export const Figure = styled.figure`
     display: flex;
     width: 40%;
     padding: 10px;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 export const Logo = styled.img`
     width: 23%;
     height: 13vh;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        width: 60%;
+        height: 15vh;
+        object-fit: contain;
+    }
 `;
 
 export const BoxList = styled.section`
@@ -37,6 +52,11 @@ export const BoxList = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        width: 90%;
+        border-radius: 25px;
+    }
 `;
 
 export const List = styled.ul`
@@ -54,7 +74,7 @@ export const List = styled.ul`
 
 export const Li = styled.li`
     color: white;
-    font-size: 20px;
+    font-size: 1.5em;
     color: #75D5E6;
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
@@ -70,5 +90,9 @@ export const Li = styled.li`
 
     &:hover::after {
         transform: scaleX(1);
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: 1em;
     }
 `;

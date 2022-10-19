@@ -1,7 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
+//Styles
 import * as Geral from '../style';
 import * as S from './style';
-import { Link } from 'react-router-dom';
+
+//Images
 import ObjetiveOne from '../../img/ObjectiveOne.png';
 import ObjetiveTwo from '../../img/ObjectiveTwo.png';
 import ObjetiveThree from '../../img/ObjectiveThree.png';
@@ -22,8 +26,8 @@ export default function index() {
       </Geral.Header>
       <S.Main>
         <S.TitleBox>
-          <S.Title>Sustainable Development Goals</S.Title>
-          <S.Text>The Sustainable Development Goals (SDGs), also known as the Global Goals, were adopted by the United Nations in 2015 as a universal call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity. And those are my goals for my small town.</S.Text>
+          <S.Title>Sustainable Development Goals for Riacho dos Cavalos</S.Title>
+          <S.Text>The Sustainable Development Goals are a global call to action to end poverty, protect the environment and climate and ensure that people everywhere can enjoy peace and prosperity. These are the goals to which the United Nations is contributing so that we can achieve the 2030 Agenda in Brazil.</S.Text>
         </S.TitleBox>
         <S.Container>
           <S.ObjectivesBox>

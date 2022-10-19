@@ -19,6 +19,10 @@ export const Title = styled.h1`
     font-weight: 900;
     padding: 30px;
     word-break: break-all;
+
+    @media only screen and (min-width: 320px) and (max-width: 600px) {
+        font-size: 2rem;
+    }
 `;
 
 export const Projects = styled.section`
@@ -38,6 +42,11 @@ export const ProjectBox = styled.section`
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @media only screen and (min-width: 320px) and (max-width: 600px) {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 `;
 
 export const Acess = styled.section`
@@ -47,6 +56,11 @@ export const Acess = styled.section`
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+
+    @media only screen and (min-width: 320px) and (max-width: 600px) {
+        width: 100%;
+        min-height: 30vh;
+    }
 `;
 
 export const AcessBox = styled.section`
@@ -61,12 +75,11 @@ export const AcessBox = styled.section`
 `;
 
 export const Icon = styled.img`
-    width: 100%;
     height: 10vh;
     transition: 1s all linear;
 
     &:hover {
-        transform: scale(1.1);
+        filter: drop-shadow(5px 5px 6px #000);
     }
 `;
 
@@ -78,22 +91,35 @@ export const Link = styled.h1`
     transition: 1s all linear;
 
     &:hover {
-        transform: scale(1.1);
+        letter-spacing: 2px;
     }
 `;
 
-export const ProjectImageBox = styled.section`
+export const ProjectImageBox = styled.figure`
     width: 50%;
     min-height: 50vh;
+    overflow: hidden;
+
+    @media only screen and (min-width: 320px) and (max-width: 600px) {
+        width: 100%;
+    }
 `;
 
 export const ProjectPhoto = styled.img`
     width: 100%;
     height: 60vh;
-    transition: 1s all linear;
+    transition: 1s all;
 
     &:hover {
-        transform: scale(.9);
-        border-radius: 20px;
+        filter: grayscale(100%);
+        transform: scalex(1.1);
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 600px) {
+        height: 45vh;
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 1023px) {
+        height: 50vh;
     }
 `;

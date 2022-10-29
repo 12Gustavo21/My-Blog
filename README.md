@@ -20,11 +20,17 @@
  <img src="https://media.discordapp.net/attachments/1000858323026989078/1035965787191648286/IMG_20221029_141744.jpg?width=218&height=454" alt="Mobile"/>
 </div>
 
-### How to use
+## How to use
  
- - git clone https://github.com/12Gustavo21/My-Blog.git
- - npm install
- - code .
- - npm start
+ <div>
+  <ul align="left">
+   <li>git clone <a>https://github.com/12Gustavo21/My-Blog.git</a></li>
+   <li>npm install</li>
+   <li>code .</li>
+   <li>npm start</li>
+  </ul>
+  <img src="public/Icon.png" alt="Icon" width="200" height="200" align="right" />
+ </div>
  
  ## Online Page: https://my-blog-12gustavo21.vercel.app
+ 
